@@ -14,3 +14,6 @@ This repository tracks my cybersecurity hands-on practice, including:
 - Security Onion (planned)
 
 More updates coming soon as I build, break, and learn.
+
+## TryHackMe Writeups
+- [Blue](tryhackme/blue.md)
