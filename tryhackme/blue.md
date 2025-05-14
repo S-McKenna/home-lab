@@ -93,6 +93,7 @@ Once access was gained, I executed the following:
 - **Adaptability is key** - when the default exploit path fails, adjusting payloads or parameters often resolves it.
 - Even in controlled environments, **debugging network paths** and session failures simulates real-world troubleshooting.
 
-
+Images:
+!(https://github.com/S-McKenna/home-lab/blob/main/GitHub%20Metasploit%20May%2013%202025.png)
 
 
