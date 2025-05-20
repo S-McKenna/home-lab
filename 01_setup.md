@@ -48,15 +48,17 @@ Had previously installed **VirtualBox 7.x** and today created two virtual machin
 
 ---
 
-## 📸 Screenshots (to be uploaded)
+## 📸 Screenshots 
 Place images in `/screenshots/` and reference them below:
 
 - Folder structure
 - ISOs saved in `C:\Users\samue\OneDrive\Desktop\Home Lab\ISO Files`
+- ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/b94f3c7e9718e8a3ee7d893c3dcf248652dc5964/screenshots/Server%202022%20ISO%20Download%20Screenshot.png)
 - VirtualBox main screen with both VMs
 - ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/7de62051794ea9ca7dd97ce9f53a52d2c3b69c0d/screenshots/Virtual%20Box%20with%20all%20VMs.png)
 - VM settings for each machine
 - Windows 10 post-install login screen
+- ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/b94f3c7e9718e8a3ee7d893c3dcf248652dc5964/screenshots/WIN10%20Installed%20on%20Virtual%20Box.png)
 
 ---
 
