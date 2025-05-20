@@ -54,7 +54,7 @@ Place images in `/screenshots/` and reference them below:
 - Folder structure
 - ISOs saved in `C:\Users\samue\OneDrive\Desktop\Home Lab\ISO Files`
 - VirtualBox main screen with both VMs
-- ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/main/screenshots/Virtual%20Box%20with%20all%20VMs.pnghttps://github.com/S-McKenna/home-lab/blob/main/screenshots/Virtual%20Box%20with%20all%20VMs.png)
+- ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/7de62051794ea9ca7dd97ce9f53a52d2c3b69c0d/screenshots/Virtual%20Box%20with%20all%20VMs.png)
 - VM settings for each machine
 - Windows 10 post-install login screen
 
