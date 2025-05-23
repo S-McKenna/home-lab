@@ -1,9 +1,12 @@
 # 🧪 Day 3.5 – Client-02 Setup & Network Test
 
-**Date Completed**: Friday, May 23, 2025  
-**Estimated Time**: 1–1.5 hours  
-**Status**: ✅ Complete  
-**Objective**: Add second client VM and verify full VM network communication
+**Date Completed**: `Friday, May 23, 2025  `
+
+**Estimated Time**: `.5 hours ` 
+
+**Status**: ✅ `Complete ` 
+
+**Objective**: `Add second client VM and verify full VM network communication`
 
 ---
 
@@ -41,11 +44,10 @@
 ## 📸 Screenshots
 
 Stored in:  
-`/Screenshots/Day3.5_Client02_NetworkTest/`
+`Week1/Screenshots/`
 
 Included:
 - ✅ All 3 VMs running in VirtualBox or on desktop
-- ✅ `ipconfig /all` for DC-01, Client-01, and Client-02
 - ✅ Successful `ping` output from:
   - DC-01 ➜ Client-01 & Client-02
   - Client-01 ➜ DC-01 & Client-02
