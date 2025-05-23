@@ -1,17 +1,18 @@
 # Day 3: Initial Communication Test – DC-01 and Client VM
 
-**Date**: Thursday, May 22, 2025  
-**Goal**: Confirm internal network communication between Domain Controller (DC-01) and Windows Client (Win10Client01) via ICMP (ping) after assigning static IPs and configuring VirtualBox networking.
+**Date**: `Thursday, May 22, 2025  `
+
+**Goal**: `Confirm internal network communication between Domain Controller (DC-01) and Windows Client (Win10Client01) via ICMP (ping) after assigning static IPs and configuring VirtualBox networking.`
 
 ---
 
 ## ✅ VM Configuration Summary
 
 ### DC-01 (Windows Server 2022)
-- **Name**: DC-01
+- **Name**: `WInServer-DC`
 - **RAM**: 4GB
 - **CPU**: 2 cores
-- **HDD**: 80GB
+- **HDD**: 60GB
 - **IP Address**: `192.168.10.10`
 - **Network Adapter**:  
   - Type: `Intel PRO/1000 MT Desktop`  
@@ -46,11 +47,9 @@
 
 ## 📸 Screenshots
 
-- `Screenshots/Client-IPConfig.png` – Static IP config on Win10Client01  
-- `Screenshots/Server-IPConfig.png` – Static IP config on DC-01  
-- `Screenshots/Client-Ping-Test.png` – Successful ping from Client to Server  
-- `Screenshots/Server-Ping-Test.png` – Successful ping from Server to Client  
-- `Screenshots/VM-Network-Settings.png` – Internal network adapter settings in VirtualBox
+- `Screenshots/Client-Ping-Test` – Successful ping from Client to Server  ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/55c1adb573aca01342f4c0b9b6e29ebdc7ad46e8/Week%201/screenshots/Successful%20Ping%20Test%20between%20Client%20and%20Server.png)
+- `Screenshots/VM-Network-Settings Client` – Client:  ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/55c1adb573aca01342f4c0b9b6e29ebdc7ad46e8/Week%201/screenshots/Client%20Adapter.png)
+- `Screenshots/VM-Network-Settings Server` – Server:  ![VirtualBox VM List](https://github.com/S-McKenna/home-lab/blob/55c1adb573aca01342f4c0b9b6e29ebdc7ad46e8/Week%201/screenshots/Server%20Adapter.png)
 
 ---
 
