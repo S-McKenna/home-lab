@@ -140,8 +140,10 @@ Address: 192.168.10.50
 
 ## 📸 Suggested Screenshots
 
-- AD DS install wizard summary page (pending upload)
-- Domain setup screen (`lab.local`) (pending upload)
+- AD DS install wizard summary page 
+  ![VirtualBox AD DS Install ](https://github.com/S-McKenna/home-lab/blob/3d8b3157e81dd97e55238290d49012647274c048/Week%202%20Active%20Directory%20and%20Domain%20Management/screenshots/AD%20DS%20Install.png)
+- Domain setup screen (`lab.local`) 
+  ![VirtualBox Domain Screen](https://github.com/S-McKenna/home-lab/blob/3d8b3157e81dd97e55238290d49012647274c048/Week%202%20Active%20Directory%20and%20Domain%20Management/screenshots/New%20Forest%20Name%20Lab%20Local.png)
 - Final confirmation screen before promotion (pending upload)
 - DNS Manager showing Forward Lookup Zones (pending upload)
 
