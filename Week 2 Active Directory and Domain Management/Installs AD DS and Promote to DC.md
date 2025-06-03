@@ -33,6 +33,77 @@ While beginning DNS verification via `nslookup`, encountered an error:
 - Issue persists
 
 ---
+## Update on Encountered Issue
+1. Open DNS Manager  
+2. Right-click Reverse Lookup Zones → New Zone...
+3. In the Wizard:
+   - Zone Type: Primary
+   - Zone Name: 10.168.192.in-addr.arpa (for 192.168.10.0/24)
+   - ✅ Allow secure dynamic updates
+4. ✅ Result:  
+   Reverse Lookup Zone created successfully.
+
+---
+
+## 🧪 Part 3: Testing Reverse DNS (PTR)
+
+### 🔍 Initial Test Output (from DC-01):
+```txt
+nslookup 192.168.10.50
+Server:  localhost.hsd1.ut.comcast.net
+Address: ::1
+*** localhost.hsd1.ut.comcast.net can't find 192.168.10.50: Non-existent domain
+```
+
+### ✅ Resolution Attempt:
+- Updated both Ethernet adapters to use 192.168.10.10 as DNS
+- Still received resolution failure
+
+### 🔧 Forced Query to Internal DNS:
+```txt
+nslookup 192.168.10.50 192.168.10.10
+Server:  DC-01.lab.local
+Address: 192.168.10.10
+*** DC-01.lab.local can't find 192.168.10.50: Non-existent domain
+```
+
+### ✅ Root Cause:
+No PTR record was present in reverse zone
+
+---
+
+## 🛠️ Part 4: Manual PTR Record Creation
+
+1. Open DNS Manager
+2. Navigate to:
+   DC-01 > Reverse Lookup Zones > 10.168.192.in-addr.arpa
+3. Right-click zone → New Pointer (PTR)...
+4. Enter:
+   - IP last octet: 50
+   - Host: web01.lab.local
+5. Click OK
+
+---
+
+## 🧪 Final Verification
+
+### ✅ Successful nslookup:
+```txt
+nslookup 192.168.10.50 192.168.10.10
+Server:  DC-01.lab.local
+Address: 192.168.10.10
+
+Name:    web01.lab.local
+Address: 192.168.10.50
+```
+
+---
+
+## 🧩 Notes
+- Creating the reverse zone after the A record prevented automatic PTR creation
+- Manually creating the PTR resolves the issue
+- Reverse DNS is now operational within lab.local
+---
 
 ## 🛠️ Next Steps (Planned)
 
