@@ -27,14 +27,14 @@ Checked activation status.
 
 **Result:**  
 Windows was **not activated** (Error 0xC004F213).  
-> _Screenshot:_ `activation-status.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/Windows%20not%20activated.png)
 
 ---
 
 ### 2. Launch BitLocker Drive Encryption
 **Action:**  
 Opened **Manage BitLocker** and confirmed C: drive status as **BitLocker Off**.  
-> _Screenshot:_ `bitlocker-off.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/Before%20BitLocker%20Encryption.png)
 
 ---
 
@@ -71,7 +71,7 @@ BitLocker could not be enabled.
 The data drive specified is not set to automatically unlock...
 C: was not encrypted.
 ```
-> _Screenshot:_ `bitlocker-error.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/Snag.png)
 
 ---
 
@@ -81,7 +81,7 @@ Opened `tpm.msc`.
 
 **Result:**  
 TPM status confirmed: **Ready for use.**
-> _Screenshot:_ `tpm-status.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/TPM%20Status.png)
 
 ---
 
@@ -91,7 +91,7 @@ Enabled Group Policy to allow BitLocker without compatible TPM:
 - **Policy:** Require additional authentication at startup
 - **Setting:** Enabled
 - **Allow BitLocker without a compatible TPM:** Checked
-> _Screenshot:_ `gpedit-policy.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/Updated%20GP%20policy.png)
 
 ---
 
@@ -101,7 +101,7 @@ Reran the wizard.
 
 **Unlock Method:**  
 Selected **Let BitLocker automatically unlock my drive.**
-> _Screenshot:_ `unlock-method.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/Choose%20unlock.png)
 
 ---
 
@@ -114,14 +114,14 @@ Recorded the new recovery key.
 ### 11. Encryption Started
 **Action:**  
 Launched encryption without system check.
-> _Screenshot:_ `encrypting-status.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/BitLocker%20Encrypting.png)
 
 ---
 
 ### 12. Encryption Completed
 **Result:**  
 Encryption completed successfully.
-> _Screenshot:_ `encryption-complete.png`
+![VirtualBoxBitLocker](https://github.com/S-McKenna/home-lab/blob/b84d06df97ef472bb2d692edc64a24952556c8c4/screenshots/BitLocker/Encryption%20Complete.png)
 
 ---
 
