@@ -8,7 +8,7 @@
 
 - Screenshot: `wireshark-first-capture.png`
   
-![First capture](wireshark-first-capture.png)
+![First capture](https://github.com/S-McKenna/home-lab/blob/212da12fdf0eb94098feb725dd875b72527d39c5/labs/wireshark/Wireshark-first-capture.png)
 
 
 
